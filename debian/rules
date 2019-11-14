@@ -12,7 +12,7 @@
 # Automatically create a debian/control file
 # for the most recent supported version of Postgres.
 gencontrol:
-	PGVERSION=`pg_buildext supported-versions $(CURDIR) | tail -1` || exit $$?; \
+	PGVERSION=12 \
 	sed -s "s/PGVERSION/$$PGVERSION/g" debian/control.in >debian/control
 
 %:
