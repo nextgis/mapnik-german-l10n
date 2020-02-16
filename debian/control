@@ -3,7 +3,6 @@ Section: misc
 Priority: extra
 Maintainer: Sven Geggus <sven-osm@geggus.net>
 Build-Depends: debhelper (>= 8.0.0), libicu-dev,
- postgresql-server-dev-all,
  postgresql-server-dev-11,
  curl, libkakasi2-dev, libutf8proc-dev, pandoc
 Standards-Version: 3.9.2
